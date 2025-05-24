@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somnium Weavers Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dream_scenarios.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="waking-world-hub">
+        <h1>Waking World</h1>
+        <div id="character-info"></div>
+        <p id="instructions">Welcome, Dreamer! Click 'Enter Dream' to begin. Your choices will determine what you bring back.</p>
+        <h2>Dream Fragments</h2>
+        <div id="fragment-inventory">No fragments collected yet.</div>
+        <button id="enter-dream-btn">Enter Dream</button>
+    </div>
+    <div id="dream-scene" style="display:none;">
+        <h1>Dreaming...</h1>
+        <div id="dream-narrative"></div>
+        <div id="dream-choices"></div>
+    </div>
+</body>
+</html>
