@@ -1,0 +1,12 @@
+{
+    "name": "somnium-weavers-zero-dep-backend",
+    "version": "1.0.0",
+    "description": "Zero-Dependency Backend for Somnium Weavers Demo (Node.js http module)",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "AI Assistant",
+    "license": "MIT"
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "outDir": "./dist",      /* Output to root/dist */
+        "rootDir": "./",         /* Root is current dir */
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
+    },
+    "include": ["./*.ts"],  /* Include all .ts files in root */
+    "exclude": ["node_modules", "./dist", "./backend"] /* Exclude node_modules, dist, and old backend dir */
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somnium Weavers Demo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="dream_scenarios.js" defer></script>
+    <!-- <script src="dream_scenarios.js" defer></script> --> {/* Removed as per Task 6.1 instructions */}
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -15,12 +15,18 @@
         <p id="instructions">Welcome, Dreamer! Click 'Enter Dream' to begin. Your choices will determine what you bring back.</p>
         <h2>Dream Fragments</h2>
         <div id="fragment-inventory">No fragments collected yet.</div>
+        <button id="clear-memory-btn">Clear All Memories</button> {/* Added this button */}
         <button id="enter-dream-btn">Enter Dream</button>
     </div>
+
     <div id="dream-scene" style="display:none;">
         <h1>Dreaming...</h1>
+        <div id="dream-image-container" style="text-align: center; margin-bottom: 15px;">
+            <img id="dream-image" src="#" alt="Dream visualization" style="max-width: 100%; max-height: 300px; display: none; border: 1px solid #ccc;">
+        </div>
         <div id="dream-narrative"></div>
-        <div id="dream-choices"></div>
+        <div id="dream-choices" class="choices-container"></div> {/* Assuming class for potential future styling */}
+        <button id="return-to-waking-world-btn" style="display:none; margin-top: 20px;">Return to Waking World</button>
     </div>
 </body>
 </html>
